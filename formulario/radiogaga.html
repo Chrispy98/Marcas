@@ -1,0 +1,36 @@
+<!DOCSTRING HTML>
+<html>
+<head>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form method="POST" action="http://formadorestic.com/alumnosdaw/procesaformulario.php">
+        Nombre
+        <br>
+        <input type="text" name="nombre" placeholder="Ej: Juan">
+        <br>
+        <br>
+        Edad
+        <br>
+        <input type="number" name="edad" placeholder="Ej: 22">
+        <br>
+        <br>
+        Email
+        <br>
+        <input type="email" name="email" placeholder="Ej: juan@gmail.com">
+        <br>
+        <br>
+        ¿Eres mayor de edad?
+        <br>
+        <input type="radio" id="mayor" name="mayormenor" value="mayor de edad">
+        <label for="mayor">Mayor de edad</label>
+        <br>
+        <input type="radio" id="menor" name="mayormenor" value="menor de edad">
+        <label for="menor">Menor de edad</label>
+        <br>
+        <br>
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>
