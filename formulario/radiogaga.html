@@ -8,26 +8,26 @@
     <form method="POST" action="http://formadorestic.com/alumnosdaw/procesaformulario.php">
         Nombre
         <br>
-        <input type="text" name="nombre" placeholder="Ej: Juan">
+        <input type="text" name="nombre" placeholder="Ej: Juan" required>
         <br>
         <br>
         Edad
         <br>
-        <input type="number" name="edad" placeholder="Ej: 22">
+        <input type="number" name="edad" placeholder="Ej: 22" required>
         <br>
         <br>
         Email
         <br>
-        <input type="email" name="email" placeholder="Ej: juan@gmail.com">
+        <input type="email" name="email" placeholder="Ej: juan@gmail.com" required>
         <br>
         <br>
         ¿Eres mayor de edad?
         <br>
         <input type="radio" id="mayor" name="mayormenor" value="mayor de edad">
-        <label for="mayor">Mayor de edad</label>
+        <label for="mayor">Sí</label>
         <br>
         <input type="radio" id="menor" name="mayormenor" value="menor de edad">
-        <label for="menor">Menor de edad</label>
+        <label for="menor">No</label>
         <br>
         <br>
         <input type="submit" value="Buscar">
