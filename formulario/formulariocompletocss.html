@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Formulario completo</title>
+	<style>
+	label {
+		color: red;
+	}
+	
+	input[type="button"]{
+		background-color: skyblue;
+	}
+
+	input[type="submit"]{
+		background-color: limegreen;
+	}
+	</style>
+</head>
+
+<body>
+	<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+	<table border=1px solid black>
+		<th colspan=2>User Form</th>
+		<tr>
+			<td>Enter Name</td>
+			<td><input type="text" name="nombre" required>
+		</tr>
+		
+		<tr>
+			<td>Enter password</td>
+			<td><input type="password" name="password" required></td>
+		</tr>
+
+		<tr>
+			<td>Enter Address</td>
+			<td><textarea name="direccion" required></textarea>
+		</tr>
+
+		<tr>
+			<td>Select Game</td>
+			<td>
+				<input type="checkbox" id="hockey" name="deportes[]" value="hockey">
+				<label for="hockey">Hockey</label>
+				<br>
+				<input type="checkbox" id="football" name="deportes[]" value="football">
+				<label for="football">Football</label>
+				<br>
+				<input type="checkbox" id="badminton" name="deportes[]" value="badminton">
+				<label for="badminton">Badminton</label>
+				<br>
+				<input type="checkbox" id="cricket" name="deportes[]" value="cricket">
+				<label for="cricket">Cricket</label>
+				<br>
+				<input type="checkbox" id="volleyball" name="deportes[]" value="volleyball">
+				<label for="volleyball">Volleyball</label>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Gender</td>
+			<td>
+				<input type="radio" id="male" name="sexo" value="male">
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="sexo" value="female">
+				<label for="female">Female</label>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Select your age</td>
+			<td><select name="edad" id="edad">
+				<option disabled selected>Selecciona un campo</option>
+				<option value="mayor de edad">+18</option>
+				<option value="menor de edad">-18</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan=2><input type="file" id="archivo" name="archivo" ></td>
+		</tr>
+
+		<tr>
+			<td colspan=2><input type="button" value="Click Me">
+				<input type="reset" value="Restablecer">
+				<input type="submit" value="Submit Form"></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
