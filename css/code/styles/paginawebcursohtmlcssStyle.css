@@ -1,0 +1,29 @@
+body {
+	background: #CFC;
+}
+
+h1 {
+	color: #F00;
+}
+		
+h2 {
+	color:  #A00;
+}
+		
+p {
+	color: #00F;
+}
+		
+p+ul>li{
+	color: #00F;
+}
+		
+span {
+	color: #FFF;
+	background-color: #000;
+}
+		
+h2+ul>li>span{
+	color: #00F;
+	background-color: #CFC;
+}
