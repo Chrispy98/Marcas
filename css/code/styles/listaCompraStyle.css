@@ -2,6 +2,10 @@ ol {
 	list-style-type: lower-greek;
 }
 
+div {
+	width: 110px;
+}
+
 li:hover {
-	background-color: lightgray;
+	background-color: lightcyan;
 }
