@@ -1,0 +1,32 @@
+div {
+	position: relative;
+	left: 50px;
+	background-color: lightcyan;
+	width: 200px;
+	padding: 50px;
+	border: solid 2px lightslategray; 
+}
+
+input:focus{
+	background-color: #FFFFA7;
+}
+
+a {
+	position: relative;
+	top: 0.5px;
+	left: 20px;
+	padding: 2px 5px;
+	background-color: #EFEFEF;
+	text-decoration: none;
+	border: 0.1px solid slategray;
+	border-radius: 2px;
+	color: black;
+	font-size: 90%;
+	font-family: "Times New Roman";
+}
+
+a:hover {
+	background-color: purple;
+	color: #EFEFEF;
+	cursor: pointer;
+}
