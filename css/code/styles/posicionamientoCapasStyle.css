@@ -1,0 +1,28 @@
+div {
+	position: absolute;
+	height: 75px;
+	width: 75px;
+	box-shadow: 0px 0px 2px 1px #4D0084;
+	background-color: #65FEFE;
+}
+
+.d1 {
+	left: 7px;
+}
+
+#d1 {
+	left: 97px;
+}
+
+.d2 {
+	left: 187px;
+}
+
+#d2 {
+	left: 277px;
+}
+
+.d3 {
+	left: 367px;
+}
+
