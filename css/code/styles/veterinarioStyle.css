@@ -1,7 +1,7 @@
 img {
 	position: absolute;
 	top: 50px;
-	left:  60px;
+	left:  210px;
 }
 
 
@@ -9,9 +9,22 @@ img {
 div {
 	position: fixed;
 	top: 800px;
-	border: solid greenyellow 5px;
-	left: 120px;
+	left: 270px;
 	width: 1000px;
-	height: 30px;
+	height: 35px;
 	background-color: greenyellow;
+	box-shadow: 0px 0px 3px 3px lightgreen;
+}
+
+div>p {
+	position: fixed;
+	top: 781px;
+	left: 730px;
+	background-color: green;
+	font-size: 23px;
+	box-shadow: 0px 0px 2px 2px black;
+}
+
+div+p {
+	position: absolute;
 }
