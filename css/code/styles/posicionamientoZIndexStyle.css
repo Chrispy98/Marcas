@@ -1,0 +1,33 @@
+div {
+	position: absolute;
+	height: 75px;
+	width: 75px;
+	box-shadow: 0px 0px 2px 2px #4D0084;
+	background-color: #65FEFE;
+}
+
+.d1 {
+	left: 59px;
+	z-index: 5;
+}
+
+#d1 {
+	left: 46px;
+	z-index: 4;
+}
+
+.d2 {
+	left: 33px;
+	z-index: 3;
+}
+
+#d2 {
+	left: 20px;
+	z-index: 2;
+}
+
+.d3 {
+	left: 7px;
+	z-index: 1;
+}
+
