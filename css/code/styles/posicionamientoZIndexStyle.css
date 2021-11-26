@@ -6,28 +6,46 @@ div {
 	background-color: #65FEFE;
 }
 
+
+
 .d1 {
 	left: 59px;
 	z-index: 5;
+}
+
+.d1:hover {
+	z-index: 5856848;
 }
 
 #d1 {
 	left: 46px;
 	z-index: 4;
 }
+#d1:hover {
+	z-index: 5856848;
+}
 
 .d2 {
 	left: 33px;
 	z-index: 3;
+}
+.d2:hover {
+	z-index: 5856848;
 }
 
 #d2 {
 	left: 20px;
 	z-index: 2;
 }
+#d2:hover {
+	z-index: 5856848;
+}
 
 .d3 {
 	left: 7px;
 	z-index: 1;
+}
+.d3:hover {
+	z-index: 5856848;
 }
 
