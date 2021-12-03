@@ -24,11 +24,12 @@ body{
 }
 #cinco_corazones
 {
-	position:  relative;
-	left:  160px;
-	top:  50px;
+	position:  absolute;
+	left:  625px;
+	top:  140px;
+	transform: rotate(25deg);
 	color: red;
-	transform: rotate(-3deg);
+	z-index: 5;
 }
 #numeracion5corazones_invertido{
 	transform:  rotate(180deg);
@@ -72,9 +73,10 @@ body{
 #dos_treboles
 {
 	position:  absolute;
-	left:  350px;
-	top:  50px;
-	transform: rotate(3deg);
+	left:  70px;
+	top:  150px;
+	transform: rotate(-25deg);
+	z-index: 1;
 }
 #numeracion2treboles_invertido{
 	transform:  rotate(180deg);
@@ -102,9 +104,10 @@ body{
 #cuatro_treboles
 {
 	position:  absolute;
-	left:  540px;
+	left:  335px;
 	top:  60px;
-	transform: rotate(6deg);
+	transform: rotate(4deg);
+	z-index: 3;
 }
 #numeracion4treboles_invertido{
 	transform:  rotate(180deg);
@@ -147,9 +150,10 @@ body{
 #tres_picas
 {
 	position:  absolute;
-	left:  730px;
-	top:  70px;
-	transform: rotate(6deg);
+	left:  200px;
+	top:  80px;
+	transform: rotate(-13deg);
+	z-index: 2;
 }
 #numeracion3picas_invertido{
 	transform:  rotate(180deg);
@@ -179,3 +183,70 @@ body{
 	font-size: 80px;
 	transform: rotate(180deg);
 }
+
+#siete_treboles
+{
+	position:  absolute;
+	left:  500px;
+	top:  80px;
+	transform: rotate(13deg);
+	z-index: 4;
+}
+#numeracion7treboles_invertido{
+	transform:  rotate(180deg);
+	position:  absolute;
+	bottom:  0px;
+	right:  0px;
+}
+#siete_treboles>#palo1
+{
+	position:  absolute;
+	top:  3px;
+	left:  25px;
+	font-size: 80px;
+}
+#siete_treboles>#palo2
+{
+	position:  absolute;
+	top: 3px;
+	right:  25px;
+	font-size: 80px;
+}
+#siete_treboles>#palo3
+{
+	position:  absolute;
+	bottom: 3px;
+	left:  25px;
+	font-size: 80px;
+	transform: rotate(180deg);
+}
+#siete_treboles>#palo4
+{
+	position:  absolute;
+	bottom: 3px;
+	right:  25px;
+	font-size: 80px;
+	transform: rotate(180deg);
+}
+
+#siete_treboles>#palo5
+{
+	position:  absolute;
+	top: 45px;
+	left:  73px;
+	font-size: 80px;
+}
+#siete_treboles>#palo6
+{
+	position:  absolute;
+	top: 85px;
+	left:  25px;
+	font-size: 80px;
+}
+#siete_treboles>#palo7
+{
+	position:  absolute;
+	top: 85px;
+	right:  25px;
+	font-size: 80px;
+
