@@ -1,0 +1,150 @@
+body {
+	background-image: url('../pics/fondaco.jpg');
+	background-repeat: no-repeat;
+}
+
+
+#muneco {
+	position: absolute;
+	top: 650px;
+	left: 1100px;
+	max-height: 20%;
+	animation: animmuneco 8s infinite;
+}
+
+@keyframes animmuneco {
+	20% {transform: rotate(-25deg);}
+	60% {transform: rotate(25deg);}
+	80% {transform: rotate(0deg);}
+	85% {transform: rotate(-5deg);
+		top: 630px;}
+	90% {transform: rotate(5deg);
+		}
+	100% {transform: rotate(0deg);
+		top: 650px;}
+
+}
+
+#trineo {
+	position: absolute;
+	max-width: 0.1%;
+	top: 70px;
+	left: 900px;
+	animation: animtrineo 10s;
+	z-index: 3;
+}
+
+@keyframes animtrineo {
+	0% {left: 300px;
+		top: 50px
+		max-width: 17%}
+	30% {left: 300px;
+		top: 50px;
+		transform: rotate(0deg);
+		max-width: 17%;}
+	50% {left: 300px;
+		top: 50px;
+		transform: rotate(0deg);
+		max-width: 17%;}
+	100% {
+		left: 900px;
+		top: 70px
+		max-width: 0.1%}
+} 
+
+#estrella {
+	position: absolute;
+	right: -300px;
+	top: 20px;
+	max-width: 300%;
+	transform: rotate(25deg);
+	animation-name: amimestrella;
+	animation-delay: 6s;
+	animation-duration: 2s;
+	visibility: hidden;
+	filter: blur(3px);
+	z-index: 0;
+}
+
+@keyframes amimestrella {
+	10%{visibility: visible;}
+	100% {right: 2500px;}
+}
+
+#ene {
+	position: absolute;
+	top: 600px;
+	max-width: 5%;
+	z-index: 8;
+}
+
+#navidad {
+	position: absolute;
+	top: 400px;
+	left: 30px;
+	max-width: 22%;
+	z-index: 7;
+	animation-name: animnavidad;
+	animation-duration: 9s;
+}
+
+@keyframes animnavidad {
+	0% {opacity: 0;}
+	70% {opacity: 0;}
+	99% {opacity: 1;}
+}
+
+#bocadillo {
+	position: absolute;
+	max-width: 15%;
+	left: 295px;
+	top: 0px;
+	z-index: 1;
+	animation-name: animbocadillo;
+	animation-duration: 10s;
+	opacity: 0;
+}
+
+@keyframes animbocadillo {
+	0%{opacity: 0;}
+	25% {opacity: 0;}
+	40% {opacity: 1;}
+	50% {opacity: 0;}
+	
+}
+
+#merry {
+	position: absolute;
+	max-width: 7%;
+	left: 370px;
+	top: 50px;
+	z-index: 2;
+	animation-name: animmerry;
+	animation-duration: 10s;
+	opacity: 0;
+}
+
+@keyframes animmerry {
+	0%{opacity: 0;}
+	25% {opacity: 0;}
+	40% {opacity: 1;}
+	50% {opacity: 0;}
+}
+
+div {
+	font-size: 40px;
+	color: rgb(255,209,14);
+	position: absolute;
+	top: 730px;
+	left: 46px;
+	font-family: Brush Script MT;
+	animation-name: animdiv;
+	animation-duration: 9s;
+}
+
+@keyframes animdiv {
+	0% {opacity: 0;}
+	70% {opacity: 0;}
+	99% {opacity: 1;}
+}
+
