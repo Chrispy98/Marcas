@@ -1,0 +1,21 @@
+li {
+	display: inline;
+}
+
+@media only screen and (max-width: 1024px) {
+	.r4 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.r3 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.r2 {
+		display: none;
+	}
+}
