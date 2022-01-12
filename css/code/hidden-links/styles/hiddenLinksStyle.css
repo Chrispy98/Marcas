@@ -1,5 +1,12 @@
+body {
+	background-color: black;
+}
+
 li {
 	display: inline;
+	text-decoration: none;
+	background-color: #BBBBBB;
+	padding: 7px;
 }
 
 @media only screen and (max-width: 1024px) {
