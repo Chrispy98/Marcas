@@ -1,0 +1,10 @@
+@media print {
+	.collapse {
+    	display: block !important;
+    	height: auto !important;
+	}
+
+	form {
+		display:  none;
+	}
+}
