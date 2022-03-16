@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hotel. Trivago.</title>
+	<script src="js/funciones.js"></script>
+</head>
+<body>
+	<label for="adultos">Número de adultos:</label>
+	<select onchange="desplegables()" name="adultos" id="adultos">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+	</select>
+	<br>
+	<br>
+	<div></div>
+	<br>
+	<label for="kids">Número de niños:</label>
+	<select onchange="desplegables()" name="kids" id="kids">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+	</select>
+	<br>
+	<br>
+	<div></div>
+	<br>
+	<button onclick="enviar()">Enviar</button>
+</body>
+</html>
