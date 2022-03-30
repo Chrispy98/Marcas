@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>El primer Ajax</title>
+	<script>
+		function llamarAjax() {
+			let ajax=new XMLHttpRequest();
+			ajax.open("GET", "archivoAjax.txt");
+			//readyState
+			ajax.send();
+			ajax.onReadyStateChange = function () {
+				if (ajax.readyState==4 && ajax.status==200) {
+					alert(ajax.status);
+					document.getElementById("contenido").innerHTML=ajax.responseText;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="contenido"></div>
+	<input type="button" onclick="llamarAjax()">
+</body>
+</html>

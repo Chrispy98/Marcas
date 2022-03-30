@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vamos a poblar</title>
+	<script>
+		function llamarAjax() {
+			let req = new XMLHttpRequest();
+			let listaConciertos="";
+			req.onreadystatechange=function (){
+				if (req.readyState==4 && req.status==200) {
+					let replyObj = req.responseText;
+					listaConciertos=replyObj.split(",");
+					let selectObj = document.createElement("select");
+					for (i=0; i<listaConciertos.length; i++){
+						let optionObj = document.createElement("option");
+						optionObj.innerHTML=listaConciertos[i];
+						selectObj.appendChild(optionObj);
+					}
+					document.getElementsByTagName('body')[0].appendChild(selectObj);
+				}
+			}
+			req.open("GET","nombres.txt");
+			req.send();
+		}
+	</script>
+</head>
+<body onload="llamarAjax();">
+
+</body>
+</html>
+
