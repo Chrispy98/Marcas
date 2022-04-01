@@ -12,15 +12,34 @@
 					let replyObj = req.responseText;
 					listaConciertos=replyObj.split(",");
 					let selectObj = document.createElement("select");
+					selectObj.setAttribute("onchange","showPic()");
 					for (i=0; i<listaConciertos.length; i++){
 						let optionObj = document.createElement("option");
 						optionObj.innerHTML=listaConciertos[i];
+						optionObj.setAttribute("value",i);
 						selectObj.appendChild(optionObj);
 					}
 					document.getElementsByTagName('body')[0].appendChild(selectObj);
+					document.getElementsByTagName('body')[0].appendChild(document.createElement("div"));
+					document.getElementsByTagName('div')[0].appendChild(document.createElement("img"));
 				}
 			}
 			req.open("GET","nombres.txt");
+			req.send();
+		}
+
+		function showPic() {
+			let req = new XMLHttpRequest();
+			let listaPics="";
+			req.onreadystatechange=function (){
+				if (req.readyState==4 && req.status==200) {
+					let replyObj = req.responseText;
+					let clase = document.getElementsByTagName('select')[0].value;
+					listaPics=replyObj.split(",");
+					document.getElementsByTagName('img')[0].setAttribute("src",listaPics[clase]);
+				}
+			}
+			req.open("GET","fotos.txt");
 			req.send();
 		}
 	</script>
