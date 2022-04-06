@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nombres</title>
+	<script>
+		function getNombres(){
+			let req = new XMLHttpRequest();
+			let nameList = "";
+			let fullName = "";
+			req.onreadystatechange=function (){
+				if (req.readyState==4 && req.status==200){
+					clearPage();
+					let replyObj = req.responseText;
+					nameList=replyObj.split("\n");
+					for (let i=0; i<nameList.length; i++){
+						fullName=nameList[i].split(",");
+						let pObj = document.createElement("p");
+						pObj.innerHTML="NOMBRE:"+fullName[0]+"// APELLIDO 1:"+fullName[1]+"// APELLIDO 2:"+fullName[2];
+						document.getElementsByTagName('body')[0].appendChild(pObj);
+					}
+					document.getElementsByTagName('body')[0].removeChild(document.getElementsByTagName('body')[0].lastChild);
+				}
+			}
+			req.open("GET","nombres.csv");
+			req.send();
+		}
+		function clearPage(){
+			let bodyPage = document.getElementsByTagName('body')[0];
+			bodyPage.innerHTML=" ";
+			let buttonPage = document.createElement("button");
+			buttonPage.setAttribute("onclick", "getNombres();");
+			buttonPage.innerHTML="Cargar";
+			bodyPage.appendChild(buttonPage);
+		}
+	</script>
+</head>
+<body>
+	<button onclick="getNombres();">Cargar</button>
+</body>
+</html>
