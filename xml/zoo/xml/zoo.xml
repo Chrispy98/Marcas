@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoo>
+	<animal>
+		<especie>Ornithorhynchus anatinus</especie>
+		<nombre>Paco</nombre>
+	</animal>
+	<animal>
+		<especie>Delphinidae</especie>
+		<nombre>Serafín</nombre>
+	</animal>
+</zoo>

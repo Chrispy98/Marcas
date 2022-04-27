@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function cargarLibros()
+        {
+            var xhr=new XMLHttpRequest();
+            //readyState
+            //status
+            //responseText
+            xhr.onreadystatechange=function()
+                {
+                    if(xhr.readyState==4 && xhr.status==200)
+                    {
+                        //Ya tengo los datos
+                        var obj_xml=xhr.responseXML;
+                        tratarXML(obj_xml);
+
+                    }   
+
+                }
+            xhr.open("GET", "books.xml");
+            xhr.send();
+
+        }
+        function tratarXML(xml)
+        {
+            var lista_libros=xml.getElementsByTagName("libro");
+            var mensaje;
+            for (k=0; k<lista_libros.length; k++){
+                var libro=lista_libros[k].childNodes[0].nodeValue;
+                var lista_autores=lista_libros[k].getElementsByTagName("autor");
+                var lista_titulos=lista_libros[k].getElementsByTagName("titulo");
+                mensaje+="<p>AUTOR: ";
+                for (i=0; i<lista_autores.length; i++){
+                    var nombre_autor=lista_autores[i].childNodes[0].nodeValue;
+                    mensaje+=nombre_autor+"  ";
+                }
+                console.log("El autor se llama "+nombre_autor);
+                mensaje+="</p><p>TITULO: ";
+
+                for (j=0; j<lista_titulos.length; j++){
+                    var nombre_titulo=lista_titulos[j].childNodes[0].nodeValue;
+                    mensaje+=nombre_titulo+"  ";
+                }
+                mensaje+="</p>";
+                document.body.innerHTML=mensaje;
+            }
+        }
+    </script>
+</head>
+<body onload="cargarLibros();">
+
+
+
+</body>
+</html>
