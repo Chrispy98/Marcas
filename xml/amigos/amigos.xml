@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<amigos>
+	<contacto>
+		<nombre>Sinco</nombre>
+		<telefono>000005000</telefono>
+	</contacto>	
+	<contacto>
+		<nombre>Pepe</nombre>
+		<telefono>639285174</telefono>
+	</contacto>
+</amigos>
