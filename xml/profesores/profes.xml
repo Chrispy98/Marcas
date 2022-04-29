@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centro>
+	<profe>
+		<nombre>Susana Horia</nombre>
+		<asignatura>Ingeniería de bizcochos</asignatura>
+		<asignatura>Ensaladilla II</asignatura>
+	</profe>
+	<profe>
+		<nombre>Larry Cacena</nombre>
+		<asignatura>Manipulación de alimentos IV</asignatura>
+	</profe>
+</centro>
