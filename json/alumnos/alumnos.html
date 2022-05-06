@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Alumnos</title>
+	<script>
+		let req=new XMLHttpRequest();
+		req.onreadystatechange=function(){
+			if (req.readyState==4 && req.status==200){
+				let jsonAl=req.responseText;
+				let alumnos=JSON.parse(jsonAl);
+				let uList=document.createElement("ul");
+				document.getElementsByTagName('body')[0].appendChild(uList);
+				for (i=0; i<alumnos.length; i++){
+					let objLi=document.createElement("li");
+					let nombre = alumnos[i].nombre;
+					let edad = alumnos[i].edad;
+					document.getElementsByTagName('ul')[0].appendChild(objLi);
+					document.getElementsByTagName('li')[i].innerHTML="Nombre: "+nombre+" | Edad: "+edad;
+				}
+			}
+		}
+		req.open("GET","alumnos.json");
+		req.send();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

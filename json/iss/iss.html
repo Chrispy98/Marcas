@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gimme da latitude</title>
+	<script>
+		let req=new XMLHttpRequest();
+		req.onreadystatechange=function (){
+			if (this.readyState==4 && this.status==200){
+				let jsText=req.responseText;
+				let coordinate=JSON.parse(jsText);
+				let parrafo=document.createElement("p");
+				document.getElementsByTagName('body')[0].appendChild(parrafo);
+				document.getElementsByTagName('p')[0].innerHTML="<b>message: "+coordinate.message+" </b>· timestamp: "+coordinate.timestamp+" <b>· longitude: "+coordinate.iss_position.longitude+" </b>· latitude: "+coordinate.iss_position.latitude;
+			}
+		}
+		req.open("GET","http://api.open-notify.org/iss-now.json");
+		req.send();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
